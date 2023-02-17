@@ -197,6 +197,12 @@ header li > a {
 }
 
 /* hEADER NAV */
+/* header nav */
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
 .trigger {
     font-size: 1.5em;
     display: flex;
@@ -272,6 +278,14 @@ nav .fly-item {
     background-color: var(--secondary-dark-color);
     border-radius: var(--percent50);
 }
+.mega .flexcol {
+    flex: 1;
+    min-width: 180px;
+    padding-right: 2.5em;
+    margin-bottom: 1.5em;
+    z-index: 1;
+}
+
 /* -------------
 * 15. RESPONSIVE
 * -------------- */
@@ -296,5 +310,17 @@ nav .fly-item {
     }
     .header-nav .right li > a {
         margin-left: 1em;
+    }
+    /* mega menu */
+    nav .mega {
+        position: absolute;
+        width: var(--percent100);
+        height: auto;
+        left: 0;
+        right: 0;
+        padding: 2.5em;
+        line-height: 2em;
+        background-color: var(--light-bg-color);
+        box-shadow: rgb(0 0 0 / 20%) 0 30px 20px -30px;
     }
 }
